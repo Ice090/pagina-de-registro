@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+
+body {
+    background: rgb(115,1,255);
+    background: linear-gradient(321deg, rgba(115,1,255,1) 0%, rgba(74,34,254,1) 47%, rgba(14,81,252,1) 100%);
+    font-family: Fira Code;
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Fira Code;
+}
+
+form {
+    width: 28vw;
+    padding: 20px 0 30px;
+}
+.form-login {
+    background: rgb(53,57,62);
+    background: linear-gradient(355deg, rgba(53,57,62,1) 0%, rgba(44,45,48,1) 100%);
+    border-radius: 7px;
+    padding: 0 30px 30px 30px;
+    min-width: 300px;
+}
+
+.form-login-header {
+    align-items: center;
+    text-align: center;
+}
+
+.form-login-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 40px 0;
+}
+
+.login .form-login .hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+img {
+    width: 60px;
+    aspect-ratio: auto 60 / 60;
+    height: 60px;
+    cursor: pointer;
+}
+
+img:hover {
+    animation: image-hover 5s infinite;
+    transition: all 4s;
+}
+
+@keyframes image-hover {
+    0% {transform: scale(1); transition: all 3s; filter: drop-shadow(0 0 15px rgba(14,81,252,1));}
+    50% {transform: scale(1.3); transition: all 3s; filter: drop-shadow(0 0 20px rgba(14, 81, 252, 0.327));}
+    100% {transform: scale(1); transition: all 3s; filter: drop-shadow(0 0 15px rgba(14,81,252,1));}
+}
+
+.form-login h1 {
+    color: aliceblue;
+    --cor-neon: rgba(14,81,252,1);
+    margin: 0;
+    font-family: Fira Code;
+}
+
+
+.form-login p {
+    display: inline-block;
+    font-size: 14px;
+    color: aliceblue;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    animation: typing;
+    overflow: hidden;
+    animation: typing 4s steps(60) both;
+    width: 100%;
+}
+
+@keyframes border {
+    from {
+        border-right: 1px solid transparent;
+    } to {
+        border-right: 1px solid #fff;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    } to {  
+        width: 100%;
+    }
+}
+
+.form-login label {
+    font-size: 16px;
+    color: aliceblue;
+    margin: 0;
+}
+
+.form-login input {
+    color: azure;
+    background-color: #606060;
+    opacity: 0.9;
+    font-size: 14px;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid #202225;
+    padding: 8px 8px;
+    margin-bottom: 10px;
+    outline: none;
+    font-family: Fira Code;
+    
+}
+.form-login input:hover {
+    background-color: #535353;
+    transform: scale(1.02);
+    transition: 400ms;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.099));
+}
+
+.form-login input::placeholder {
+    color: aliceblue;
+    font-family: Fira Code;
+    opacity: 0.6;
+}
+
+.checkbox {
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.checkbox input {
+    margin: 0;
+    min-width: 14px;
+}
+
+.checkbox span {
+    font-size: 13px;
+    color: aliceblue;
+}
+
+.checkbox span a {
+    text-decoration: none;
+    color: rgb(57, 83, 230);
+}
+
+.checkbox span a:hover {
+    color: rgb(72, 97, 242);
+    transition: 500ms;
+}
+
+.bnt {
+    background-color: #f2f2f2;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 15px !important;
+    font-family: Fira Code !important;
+    font-weight: 500;
+}
+
+.bnt:hover {
+    background-color: #535353;
+    transform: scale(1.02);
+    transition: 400ms;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.1));
+}
+
+@media screen and (max-width: 500px) {
+    .form-login {
+        background: linear-gradient(321deg, rgba(115,1,255,1) 0%, rgba(74,34,254,1) 47%, rgba(14,81,252,1) 100%);
+        border-radius: 0px;
+        padding: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        filter: drop-shadow(2px 4px 6px rgba(1, 1, 99, 0.54));
+    }
+
+    .checkbox span a {
+        color: rgb(227 189 255);
+    }
+    
+    .checkbox span a:hover {
+        color: rgb(149, 108, 255);
+        transform: scale(1.5);
+    }
+    
+}
