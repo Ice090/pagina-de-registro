@@ -18,7 +18,6 @@ body {
 }
 
 form {
-    width: 28vw;
     padding: 20px 0 30px;
 }
 .form-login {
@@ -27,6 +26,7 @@ form {
     border-radius: 7px;
     padding: 0 30px 30px 30px;
     min-width: 300px;
+    
 }
 
 .form-login-header {
@@ -80,26 +80,24 @@ img:hover {
     color: aliceblue;
     margin-bottom: 10px;
     white-space: nowrap;
-    animation: typing;
     overflow: hidden;
-    animation: typing 4s steps(60) both;
-    width: 100%;
+    width: 12.7rem;
+    border-right: 1px solid white;
+    animation: border 600ms steps(40) infinite, typing 2s steps(40)  normal backwards;
 }
 
 @keyframes border {
-    from {
-        border-right: 1px solid transparent;
-    } to {
-        border-right: 1px solid #fff;
+    0% {
+        border-right-color: white;
+    }
+    100% {
+        border-right-color: transparent;
     }
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    } to {  
-        width: 100%;
-    }
+    0% { width: 0; }
+    100% { width: 12.7rem; }
 }
 
 .form-login label {
@@ -145,6 +143,7 @@ img:hover {
 .checkbox input {
     margin: 0;
     min-width: 14px;
+    display: inline-block;
 }
 
 .checkbox span {
