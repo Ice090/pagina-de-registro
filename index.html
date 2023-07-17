@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Css/login.css">
-    <script>
-        function redirecionar(event) { 
-          var email = document.getElementById('email')
-          var senha = document.getElementById('senha')
-          
-            event.preventDefault();
-            //var email = document.querySelector('input[name="username"]').value;
-            //var senha = document.querySelector('input[name="password"]').value;
-            
-            if (email.value.length > 0 && senha.value.length > 0) {
-                window.location.href = "https://plataforma-ai.vercel.app";
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Css/login.css">
 </head>
+
 <body>
-    <div class="login">
-      <form method="post" class="form-login" onsubmit="redirecionar(event)">
-        <div class="form-login-content">
-          <div class="form-login-header">
-            <img src="image/logo.png" alt="logo" width="60px" height="60px">
-            <div class="hero">
-                <h1>Cadastre-se</h1>
-            </div>
+  <div class="login">
+    <form method="post" class="form-login" onsubmit="redirecionar(event)">
+      <div class="form-login-content">
+        <div class="form-login-header">
+          <img src="image/logo.png" alt="logo" width="60px" height="60px">
+          <div class="hero">
+            <h1>Cadastre-se</h1>
           </div>
-          <p class="border-animation">Digite seus dados abaixo</p>
-          <label for="email">E-mail</label>
-          <input type="email" placeholder="example@email.com" name="username" required id="email">
-          <label for="senha">Senha</label>
-          <input type="password" placeholder="Ft1k&3t6T" name="password" required id="senha">
-          <div class="checkbox">
-              <input type="checkbox">
-            <span>Aceito os <a href="https://error-404-seven.vercel.app">termos de privacidade</a></span>
-          </div>
-          <input type="submit" value="Cadastrar" class="btn">
         </div>
-      </form>
-    </div>
+        <p class="border-animation">Digite seus dados abaixo</p>
+        <label for="email">E-mail</label>
+        <input type="email" placeholder="example@email.com" name="username" required id="email">
+        <label for="senha">Senha</label>
+        <input type="password" placeholder="Ft1k&3t6T" name="password" required id="senha">
+        <div class="checkbox">
+          <input type="checkbox" id="check">
+          <span>Aceito os <a href="https://error-404-seven.vercel.app">termos de privacidade</a></span>
+        </div>
+        <input type="submit" value="Cadastrar" class="btn">
+      </div>
+    </form>
+  </div>
+  <script src="javascript/script.js"></script>
 </body>
+
 </html>
