@@ -20,13 +20,14 @@ body {
 form {
     padding: 20px 0 30px;
 }
+
 .form-login {
     background: rgb(53,57,62);
     background: linear-gradient(355deg, rgba(53,57,62,1) 0%, rgba(44,45,48,1) 100%);
     border-radius: 7px;
     padding: 0 30px 30px 30px;
     min-width: 300px;
-    
+    box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.799);
 }
 
 .form-login-header {
