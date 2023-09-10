@@ -9,29 +9,35 @@
 </head>
 
 <body>
-  <div class="login">
-    <form method="post" class="form-login" onsubmit="redirecionar(event)">
-      <div class="form-login-content">
-        <div class="form-login-header">
-          <img src="image/logo.png" alt="logo" width="60px" height="60px">
-          <div class="hero">
-            <h1>Cadastre-se</h1>
+  <div class="container" id="container">
+    <div class="create">
+      <div class="content-create">
+        <div class="criar-conta">
+          <h1>Criar Conta</h1>
+          <p>Digite os dados abaixo</p>
+        </div>
+        <div class="inputs">
+          <input clas type="text" required placeholder="Usuário">
+          <input type="email" required placeholder="E-mail">
+          <input type="password" required placeholder="Senha">
+          <input type="password" required placeholder="Confirmar Senha">
+          <div class="check">
+          <div id="switch" onclick="toggleMode()">
+              <button></button>
+              <span></span>
+          </div>
+            <span>Li e aceito os <span class="term">
+              <a href="#">termos de privacidade</a>
+            </span></span>
           </div>
         </div>
-        <p class="border-animation">Digite seus dados abaixo</p>
-        <label for="email">E-mail</label>
-        <input type="email" placeholder="example@email.com" name="username" required id="email">
-        <label for="senha">Senha</label>
-        <input type="password" placeholder="Ft1k&3t6T" name="password" required id="senha">
-        <div class="checkbox">
-          <input type="checkbox" id="check">
-          <span>Aceito os <a href="https://error-404-seven.vercel.app">termos de privacidade</a></span>
-        </div>
-        <input type="submit" value="Cadastrar" class="btn">
       </div>
-    </form>
+      <div class="options">
+      </div>
+    </div>
+    <div class="wellcome">
+    </div>
   </div>
-  <script src="javascript/script.js"></script>
 </body>
 
 </html>
